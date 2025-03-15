@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Sons Cinema</title>
+    <link rel="stylesheet" href="/Cloud_Project/Cloud/index.css" />
+
+    <!-- CSS 파일 연결 -->
+  </head>
+  <body>
+    <!-- 상단 메뉴 -->
+    <div class="header">
+      <div class="header_content">
+        <div class="contents">
+          <h1 class="title">
+            <a href="index.html">
+              Three Sons
+              <span>Movie Cinema</span></a
+            >
+          </h1>
+          <ul class="memberInfo">
+            <li id="loginButton">
+              <a href="Cloud_Project/Cloud/login.html">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png"
+                  alt="로그인"
+                />
+                <span>로그인</span>
+              </a>
+            </li>
+            <li id="logoutButton" style="display: none;">
+              <a href="Cloud_Project/Cloud/Logout.jsp">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png"
+                  alt="로그아웃"
+                />
+                <span>로그아웃</span>
+              </a>
+            </li>
+            <li id="signupButton">
+              <a href="Cloud_Project/Cloud/newClient.html">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png"
+                  alt="회원가입"
+                />
+                <span>회원가입</span>
+              </a>
+            </li>
+            <li>
+              <a href="Cloud_Project/Cloud/mypage.jsp">
+                <img
+                  src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png"
+                  alt="마이페이지"
+                />
+                <span>마이페이지</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+      <div class="nav">
+        <div class="contents">
+          <ul class="nav-menu">
+            <li>
+              <h2>
+                <a href="Cloud_Project/Cloud/showingmoive.html">영화</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                <a href="Cloud_Project/Cloud/CheckReservation.jsp">예매</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                <a href="Cloud_Project/Cloud/food_combo.html">매점</a>
+              </h2>
+            </li>
+            <li>
+              <h2>
+                <a href="Cloud_Project/Cloud/reservation.html">추천</a>
+              </h2>
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <!-- 동영상 배경 섹션 -->
+    <div class="video-section">
+      <div class="video-part">
+        <video autoplay muted loop class="background-video">
+          <source src="Cloud_Project/Cloud/image/Firefighters.mp4" type="video/mp4" />
+          <!-- 동영상 파일 경로를 수정해 주세요 -->
+        </video>
+        <div class="video-overlay">
+          <h2>소방관</h2>
+          <p>2001년 홍제동 화제 사건 실화 <br />12월 4일 극장 대개봉</p>
+          <button>
+            <a href="Cloud_Project/Cloud/View_details/fire.jsp" target="_blank">상세보기</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 영화 섹션 -->
+    <div class="movies">
+      <div class="movie-container">
+        <div class="movie-card">
+          <img src="Cloud_Project/Cloud/image/glady.jpg" alt="영화 포스터" />
+          <div class="overlay">
+            <button>
+              <a href="Cloud_Project/Cloud/View_details/glady.jsp" target="_blank">상세보기</a>
+            </button>
+            <button class="reserve-btn" disabled>예매하기</button>
+
+          </div>
+        </div>
+        <div class="movie-title">글래디에이터<br />예매율 : 17.5%</div>
+      </div>
+
+      <div class="movie-container">
+        <div class="movie-card">
+          <img src="Cloud_Project/Cloud/image/wikid.jpg" alt="영화 포스터" />
+          <div class="overlay">
+            <button>
+              <a href="Cloud_Project/Cloud/View_details/wikid.jsp" target="_blank">상세보기</a>
+            </button>
+            <button class="reserve-btn" disabled>예매하기</button>
+
+          </div>
+        </div>
+        <div class="movie-title">위키드<br />예매율: 9.5%</div>
+      </div>
+
+      <div class="movie-container">
+        <div class="movie-card">
+          <img src="Cloud_Project/Cloud/image/sul.jpg" alt="영화 포스터" />
+          <div class="overlay">
+            <button>
+              <a href="Cloud_Project/Cloud/View_details/chungsul.jsp" target="_blank">상세보기</a>
+            </button>
+            <button class="reserve-btn" disabled>예매하기</button>
+
+          </div>
+        </div>
+        <div class="movie-title">청설<br />예매율: 11.3%</div>
+      </div>
+
+      <div class="movie-container">
+        <div class="movie-card">
+          <img src="Cloud_Project/Cloud/image/four.jpg" alt="영화 포스터" />
+          <div class="overlay">
+            <button>
+              <a href="Cloud_Project/Cloud/View_details/four.jsp" target="_blank">상세보기</a>
+            </button>
+            <button class="reserve-btn" disabled>예매하기</button>
+
+          </div>
+        </div>
+        <div class="movie-title">사흘<br />예매율: 3.4%</div>
+      </div>
+
+      <div class="movie-container">
+        <div class="movie-card">
+          <img src="Cloud_Project/Cloud/image/hidden.jpg" alt="영화 포스터" />
+          <div class="overlay">
+            <button>
+              <a href="Cloud_Project/Cloud/View_details/hidden.jsp" target="_blank">상세보기</a>
+            </button>
+            <button class="reserve-btn" disabled>예매하기</button>
+
+          </div>
+        </div>
+        <div class="movie-title">히든페이스<br />예매율 6.0%</div>
+      </div>
+    </div>
+    <script src = "common.js"></script>
+  </body>
+</html>
